@@ -28,7 +28,7 @@ const FeaturedCollectionSection = () => {
           <hr />
         </div>
       </div>
-      <Row gutter={[16, 16]}>
+      <Row gutter={[32, 32]}>
         {data.map((data) => (
           <Col
             xs={24}
