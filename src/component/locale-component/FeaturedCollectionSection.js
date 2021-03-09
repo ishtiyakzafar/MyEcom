@@ -1,5 +1,5 @@
-import { Col, Row } from "antd";
 import React from "react";
+import { Col, Row } from "antd";
 import feat1 from "../../assets/images/home-page/feat1.JPG";
 import feat2 from "../../assets/images/home-page/feat2.JPG";
 import feat3 from "../../assets/images/home-page/feat3.JPG";
@@ -28,7 +28,7 @@ const FeaturedCollectionSection = () => {
           <hr />
         </div>
       </div>
-      <Row gutter={[32, 32]}>
+      <Row gutter={[16, 16]}>
         {data.map((data) => (
           <Col
             xs={24}
