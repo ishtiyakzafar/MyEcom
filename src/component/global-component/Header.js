@@ -6,14 +6,13 @@ import {
   UserOutlined,
   MenuOutlined,
   CloseOutlined,
+  SearchOutlined,
 } from "@ant-design/icons";
 import Menulist from "./Menulist";
 const { Search } = Input;
 
 const Header = () => {
   const [check, setCheck] = useState(true);
-
-  const onSearch = (value) => console.log(value);
 
   const handleClick = () => {
     if (check === true) {
@@ -31,18 +30,17 @@ const Header = () => {
             <h1>ZapEcom</h1>
           </div>
         </Col>
-        <Col xs={0} sm={0} md={0} lg={0} xl={10}>
+        <Col xs={0} sm={0} md={0} lg={0} xl={11}>
           <div className="headerMenu ">
             <Menulist />
           </div>
         </Col>
-        <Col xs={0} sm={0} md={0} lg={8} xl={7}>
+        <Col xs={0} sm={0} md={0} lg={8} xl={6}>
           <div className="searchBar">
-            <Search
-              placeholder="Search products..."
-              onSearch={onSearch}
-              style={{ width: 300 }}
-            />
+            <input type="text" placeholder="Search products..." />
+            <div className="searchIcon">
+              <SearchOutlined />
+            </div>
           </div>
         </Col>
         <Col xs={12} sm={12} md={12} lg={8} xl={3}>
@@ -53,13 +51,12 @@ const Header = () => {
             <MenuOutlined onClick={handleClick} className="hamburgerIcon" />
           </div>
         </Col>
-        <Col xs={24} sm={24} md={24} lg={0} xl={0} className="searchBx">
+        <Col xs={21} sm={15} md={12} lg={0} xl={0} className="searchBx">
           <div className="searchBar">
-            <Search
-              placeholder="Search products..."
-              onSearch={onSearch}
-              style={{ width: 300 }}
-            />
+            <input type="text" placeholder="Search products..." />
+            <div className="searchIcon">
+              <SearchOutlined />
+            </div>
           </div>
         </Col>
       </Row>

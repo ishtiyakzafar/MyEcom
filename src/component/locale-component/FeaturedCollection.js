@@ -21,22 +21,14 @@ const FeaturedCollection = () => {
     { id: 7, title: "Esha Collection 2020", imgsrc: img8 },
   ];
   return (
-    <div>
-      <h1
-        style={{
-          textAlign: "center",
-          padding: "50px 0",
-          fontSize: "30px",
-          fontWeight: "bold",
-        }}
-      >
-        Featured Collection
-      </h1>
-      <Row
-        gutter={[16, 16]}
-        className="container"
-        style={{ margin: "0 auto", paddingBottom: "50px" }}
-      >
+    <div className="container">
+      <div className="hrading">
+        <h1>Featured Collection</h1>
+        <div className="headingLine">
+          <hr />
+        </div>
+      </div>
+      {/* <Row gutter={[16, 16]} className="container" style={{ margin: "0 auto" }}>
         {featuredData.map((data, ind) => (
           <Col xs={24} sm={12} md={8} lg={6} xl={6} key={data.id}>
             <div
@@ -53,6 +45,16 @@ const FeaturedCollection = () => {
             >
               <h6 className="featured_content">{data.title}</h6>
             </div>
+          </Col>
+        ))}
+      </Row> */}
+      <Row gutter={[32, 32]}>
+        {featuredData.map((data, ind) => (
+          <Col xs={24} sm={12} md={8} lg={6} xl={6} className="SingleProduct">
+            <div className="productImg">
+              <img src={data.imgsrc} />
+            </div>
+            <h3>{data.title}</h3>
           </Col>
         ))}
       </Row>
