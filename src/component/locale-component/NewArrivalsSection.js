@@ -7,9 +7,11 @@ import new2 from "../../assets/images/home-page/new2.JPG";
 import new3 from "../../assets/images/home-page/new3.JPG";
 import new4 from "../../assets/images/home-page/new4.JPG";
 import new5 from "../../assets/images/home-page/new5.JPG";
+import BrandCard from "./BrandCard";
 
 const NewArrivalsSection = () => {
   const carouselRef = useRef(null);
+
   const handlePrev = () => {
     carouselRef.current.next();
   };
@@ -89,15 +91,15 @@ const NewArrivalsSection = () => {
   ];
 
   return (
-    <div className="newArrival container">
+    <div className="newArrival ">
       <div className="hrading">
         <h1>New Arrivals</h1>
         <div className="headingLine">
           <hr />
         </div>
       </div>
-      <Row>
-        <Col span={2} className="btnBx">
+      <Row className="container">
+        <Col xs={2} sm={2} md={1} lg={1} xl={1} className="btnBx">
           {data.length < 4 ? (
             ""
           ) : (
@@ -106,7 +108,7 @@ const NewArrivalsSection = () => {
             </div>
           )}
         </Col>
-        <Col span={20}>
+        <Col xs={20} sm={20} md={22} lg={22} xl={22}>
           {data.length < 4 ? (
             <Row>
               {data.map((data) => (
@@ -120,7 +122,7 @@ const NewArrivalsSection = () => {
           ) : (
             <Carousel {...settings} ref={carouselRef}>
               {data.map((data) => (
-                <Row gutter={[16, 16]} key={data.id}>
+                <Row key={data.id}>
                   <Col span={24} className="slider">
                     <ProductCard data={data} />
                   </Col>
@@ -129,7 +131,7 @@ const NewArrivalsSection = () => {
             </Carousel>
           )}
         </Col>
-        <Col span={2} className="btnBx">
+        <Col xs={2} sm={2} md={1} lg={1} xl={1} className="btnBx">
           {data.length < 4 ? (
             ""
           ) : (

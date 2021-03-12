@@ -11,12 +11,12 @@ const NewsLetterSection = () => {
       <h1>Get Upcoming Offer News</h1>
       <Row className="searchBx ">
         <Col xs={24} sm={18} md={15} lg={12} xl={10}>
-          <Search
-            placeholder="Enter Your Email"
-            enterButton="SEND NOW"
-            size="large"
-            onSearch={onSearch}
-          />
+          <div className="searchBar">
+            <input type="text" placeholder="Enter Your Email" />
+            <div className="btn">
+              <button>SEND NOW</button>
+            </div>
+          </div>
         </Col>
       </Row>
     </div>
