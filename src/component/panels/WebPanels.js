@@ -6,13 +6,14 @@ import Women from "../pages/Women";
 import Kids from "../pages/Kids";
 import HomeandLiving from "../pages/HomeandLiving";
 import Offer from "../pages/Offer";
+import SingleProduct from "../pages/SingleProduct";
 
 const WebPanels = () => {
   return (
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/men" component={Men} />
-      <Route exact path="/women" component={Women} />
+      <Route exact path="/women" component={SingleProduct} />
       <Route exact path="/kids" component={Kids} />
       <Route exact path="/homeandLiving" component={HomeandLiving} />
       <Route exact path="/offer" component={Offer} />

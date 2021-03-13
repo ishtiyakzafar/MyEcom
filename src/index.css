@@ -577,8 +577,27 @@ html {
   font-size: 16px;
   font-weight: bold;
 }
+.babu {
+  cursor: pointer;
+}
 /* featured Coll end */
 /* ********************************************************** */
+.contin {
+  /* display: flex; */
+}
+.mainImg {
+  width: 500px;
+}
+.productImage img {
+  width: 80px;
+}
+.productImage img:hover {
+  border: 1px solid #111;
+}
+/* ********************************************************** */
+/* ********************************************************** */
+/* ********************************************************** */
+
 @media (max-width: 1199px) {
   .hamburgerIcon {
     display: block !important;
