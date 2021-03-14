@@ -118,7 +118,7 @@ const Offer = () => {
   return (
     <>
       <Banner bannerHeading="Offer" />
-      <Row>
+      {/* <Row>
         <Col xs={0} sm={0} md={0} lg={6} xl={5}>
           <ProductFilter />
         </Col>
@@ -131,6 +131,31 @@ const Offer = () => {
               </div>
             ))}
           </div>
+        </Col>
+      </Row> */}
+
+      <Row>
+        <Col
+          xs={{ span: 24, order: 2 }}
+          sm={{ span: 24, order: 2 }}
+          md={{ span: 12, order: 1 }}
+          lg={{ span: 12, order: 1 }}
+          xl={{ span: 12, order: 1 }}
+          xxl={{ span: 12, order: 1 }}
+          style={{ border: "1px solid red" }}
+        >
+          <img src={img10} alt="" />
+        </Col>
+        <Col
+          xs={{ span: 24, order: 1 }}
+          sm={{ span: 24, order: 1 }}
+          md={{ span: 12, order: 2 }}
+          lg={{ span: 12, order: 2 }}
+          xl={{ span: 12, order: 2 }}
+          xxl={{ span: 12, order: 2 }}
+          style={{ border: "1px solid red" }}
+        >
+          <img src={img6} alt="" />
         </Col>
       </Row>
     </>
